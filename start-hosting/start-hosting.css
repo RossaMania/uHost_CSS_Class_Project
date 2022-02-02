@@ -1,3 +1,8 @@
+:root {
+    --dark-green: #0e4f1f;
+    --highlight-color: #ff1b68;
+  }
+
 main {
     padding-top: 2rem;
 }
@@ -5,7 +10,7 @@ main {
 .signup-title {
     text-align: center;
     font-size: 1.8rem;
-    color: #0e4f1f;
+    color: var(--dark-green, #0e4f1f);
 }
 
 .signup-page {
@@ -32,7 +37,7 @@ main {
 
 .signup-page input.invalid,
 .signup-page select.invalid {
-    border: #ff1b68 1px solid;
+    border: var(--highlight-color, #ff1b68) 1px solid;
     background: rgb(250, 172, 172);
 }
 
@@ -87,7 +92,7 @@ main {
 .signup-page input.invalid,
 .signup-page select.invalid,
 .signup-page :invalid {
-    border: #ff1b68 1px solid !important;
+    border: var(--highlight-color, #ff1b68) 1px solid !important;
     background: rgb(250, 172, 172);
 }
 

@@ -1,133 +1,137 @@
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+}
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 main {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
 .background {
-    background: url("../images/plans-background.jpg") center/cover;
-    filter: grayscale(50%);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
+  background: url("../images/plans-background.jpg") center/cover;
+  filter: grayscale(50%);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
 }
 
 .highlightit:hover,
 .highlightit:active {
-    background: #F6D860;
-    border-color: #ff5454;
+  background: #f6d860;
+  border-color: #ff5454;
 }
 
 .plus {
-    border: solid 5px #0e4f1f;
-    background: #d5ffdc;
-    width: 60%;
-    margin: 0.8rem;
-    padding: 0.8rem;
-    position: relative;
-    overflow: hidden;
+  border: solid 5px var(--dark-green, #0e4f1f);
+  background: #d5ffdc;
+  width: 60%;
+  margin: 0.8rem;
+  padding: 0.8rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .plus:hover {
-    animation: push-up 300ms ease-out forwards;
+  animation: push-up 300ms ease-out forwards;
 }
 
 .plus-header {
-    color: black;
+  color: black;
 }
 
 .package-badge {
-    position: absolute;
-    top: 0px;
-    margin: 0;
-    right: 0;
-    font-size: 1rem;
-    color: whitesmoke;
-    background: #ff5454;
-    padding: 0.5rem;
-    transform: rotateZ(45deg) translateX(3.5rem);
-    transform-origin: center;
-    width: 12rem;
-    text-align: center;
+  position: absolute;
+  top: 0px;
+  margin: 0;
+  right: 0;
+  font-size: 1rem;
+  color: whitesmoke;
+  background: #ff5454;
+  padding: 0.5rem;
+  transform: rotateZ(45deg) translateX(3.5rem);
+  transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 .free {
-    border: solid 5px #0e4f1f;
-    background: #f5ffe9;
-    width: 60%;
-    margin: 0.75rem;
-    padding: 0.75rem;
-    float: right;
-    position: relative;
+  border: solid 5px var(--dark-green, #0e4f1f);
+  background: #f5ffe9;
+  width: 60%;
+  margin: 0.75rem;
+  padding: 0.75rem;
+  float: right;
+  position: relative;
 }
 
 .free:hover {
-    animation: push-up 300ms ease-out forwards;
+  animation: push-up 300ms ease-out forwards;
 }
 
 .free-header {
-    color: black;
+  color: black;
 }
 
 .premium {
-    border: solid 5px #0e4f1f;
-    width: 60%;
-    background: #0e4f1f;
-    margin: 0.75rem;
-    padding: 0.75rem;
-    position: relative;
+  border: solid 5px var(--dark-green, #0e4f1f);
+  width: 60%;
+  background: var(--dark-green, #0e4f1f);
+  margin: 0.75rem;
+  padding: 0.75rem;
+  position: relative;
 }
 
 .premium:hover {
-    animation: push-up 300ms ease-out forwards;
+  animation: push-up 300ms ease-out forwards;
 }
 
 .premium-header {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 p {
-    width: 60%;
-    border: solid 2px #0e4f1f;
-    padding: 0.75rem;
-    background: whitesmoke;
-    color: #0e4f1f;
-    font: 1.25rem 'Roboto', sans-serif;
-    text-shadow: 1px 1px #8b8b8b;
-    /* font-style font-variant font-weight font-size/line-height font-family*/
+  width: 60%;
+  border: solid 2px var(--dark-green, #0e4f1f);
+  padding: 0.75rem;
+  background: whitesmoke;
+  color: var(--dark-green, #0e4f1f);
+  font: 1.25rem "Roboto", sans-serif;
+  text-shadow: 1px 1px #8b8b8b;
+  /* font-style font-variant font-weight font-size/line-height font-family*/
 }
 
 h2 {
-    color: #8b8b8b;
-    text-shadow: 1px 1px #EDEDED;
+  color: #8b8b8b;
+  text-shadow: 1px 1px #ededed;
 }
 
 @media (min-width: 40rem) {
-    main {
-      max-width: 1500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
+  main {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @keyframes push-up {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-1rem);
-    }
+  50% {
+    transform: translateY(-1rem);
+  }
 
-    100% {
-        transform: translateY(-1.5rem);
-    }
+  100% {
+    transform: translateY(-1.5rem);
+  }
 }
